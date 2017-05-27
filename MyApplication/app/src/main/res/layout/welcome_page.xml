@@ -11,7 +11,8 @@
     tools:context="com.memeteam.myapplication.MainActivity"
     android:orientation="vertical"
     android:background="@android:color/white"
-    android:theme="@style/AppTheme">
+    android:theme="@style/AppTheme"
+    android:weightSum="1">
 
     <Button
         android:id="@+id/button"
@@ -24,12 +25,5 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Host Game" />
-
-    <Button
-        android:text="Button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/button3"
-        android:onClick="changeContentView" />
 
 </LinearLayout>
