@@ -15,13 +15,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.welcome_page);
     }
 
-    public void changeContentView(View hello){
+    public void gameContentView(View hello){
         setContentView(R.layout.gamescreen);
     }
 
-    public void changeContentView(View hello){
+    public void hostContentView(View hello){
         setContentView(R.layout.hostscreen);
 
-    public void changeContentView(View hello){
+    public void joinContentView(View hello){
         setContentView(R.layout.joinscreen);
 }

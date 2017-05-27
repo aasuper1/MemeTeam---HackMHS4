@@ -18,12 +18,14 @@
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="changeContentView"
         android:text="Join Game" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="changeContentView"
         android:text="Host Game" />
 
 </LinearLayout>
