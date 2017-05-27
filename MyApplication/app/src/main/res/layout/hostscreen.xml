@@ -4,14 +4,13 @@
     android:layout_height="match_parent"
     android:weightSum="1">
 
-<<<<<<< HEAD
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="0.21"
         android:text="Enter Host Pin" />
-=======
     <ListView
         android:layout_width="match_parent"
         android:layout_height="220dp" />
@@ -20,5 +19,5 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Host"/>
->>>>>>> 0d81bbb8bf7986e2e35f75cfc3e14186e5e07fa4
+
 </LinearLayout>
