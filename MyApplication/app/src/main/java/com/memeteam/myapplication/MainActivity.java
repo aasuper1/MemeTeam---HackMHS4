@@ -6,7 +6,9 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 
 public class MainActivity extends AppCompatActivity {
-    
+
+    ArrayAdapter<String> listAdapter;
+    Button
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
