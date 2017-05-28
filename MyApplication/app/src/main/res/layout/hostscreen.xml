@@ -11,6 +11,7 @@
         android:layout_height="match_parent"
         android:layout_weight="0.21"
         android:text="Enter Host Pin" />
+
     <ListView
         android:id="@+id/viewlist"
         android:layout_width="match_parent"
