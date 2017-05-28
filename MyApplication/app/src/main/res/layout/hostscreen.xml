@@ -12,6 +12,7 @@
         android:layout_weight="0.21"
         android:text="Enter Host Pin" />
     <ListView
+        android:id="@+id/listView"
         android:layout_width="match_parent"
         android:layout_height="220dp" />
     <Button
