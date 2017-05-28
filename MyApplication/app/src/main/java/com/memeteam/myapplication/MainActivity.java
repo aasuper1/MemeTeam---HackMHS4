@@ -146,7 +146,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-public class Main_Activity extends Activity implements OnItemClickListener {
+public class MainActivity extends Activity implements OnItemClickListener {
 
     ArrayAdapter<String> listAdapter;
     ListView listView;
