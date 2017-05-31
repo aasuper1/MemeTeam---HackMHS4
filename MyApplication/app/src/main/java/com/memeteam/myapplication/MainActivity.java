@@ -13,14 +13,14 @@ import android.widget.TextView;
 public class MainActivity extends Activity{
 
     int numPlayers;
-    //String playerNames[];
+    String playerNames[];
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.welcome_page);
+        setContentView(R.layout.joinscreen);
     }
-
+/*
     public void numPlayers3(View view){
         numPlayers=3;
         setContentView(R.layout.names);
@@ -57,9 +57,21 @@ public class MainActivity extends Activity{
         meme = new ImageView(this);
         meme.setImageResource(R.drawable.aa_does_not_simply);
         main.addView(meme);
-    }
+    }*/
 
-    /*
+    public void numPlayers(){
+        final EditText numOfPlayers = (EditText) findViewById(R.id.numOfPlayers);
+        final Button readyButton = (Button)findViewById(R.id.readyButton);
+        View.OnClickListener waitForNum = new View.OnClickListener() {
+            public void onClick(View v) {
+                if(v == readyButton){
+                    String value= numOfPlayers.getText().toString();
+                    numPlayers = Integer.parseInt(value);
+                }
+            }
+        };
+        setContentView(R.layout.names);
+    }
     public void initNames(){
         final EditText nameBox = (EditText) findViewById(R.id.nameBox);
         TextView prompt = (TextView)findViewById(R.id.promptNameEnter);
@@ -70,11 +82,11 @@ public class MainActivity extends Activity{
             View.OnClickListener waitForName = new View.OnClickListener() {
                 public void onClick(View v) {
                     if(v == next){
-                        //playerNames[finalX] = String.valueOf(nameBox.getText());
+                        playerNames[finalX] = String.valueOf(nameBox.getText());
                     }
                 }
             };
         }
     }
-*/
+
 }
