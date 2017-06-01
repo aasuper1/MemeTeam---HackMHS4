@@ -7,8 +7,8 @@
         android:id="@+id/numPlayersText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Enter the number of players (Min 3; Max 10)"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+        android:text="Enter number of players:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
     <EditText
         android:id="@+id/numOfPlayers"
@@ -17,9 +17,16 @@
         android:ems="10"
         android:inputType="number" />
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Minimum 3 players and maximum 10 players" />
+
     <Button
         android:id="@+id/readyButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Ready!" />
+
 </LinearLayout>
