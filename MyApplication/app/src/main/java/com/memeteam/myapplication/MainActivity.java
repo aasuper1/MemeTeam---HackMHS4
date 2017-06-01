@@ -14,6 +14,7 @@ public class MainActivity extends Activity{
 
     Button sButton;
     EditText sEdit;
+    Button nButton;
     EditText nameBox;
     int numPlayers;
     String playerNames[];
@@ -42,11 +43,24 @@ public class MainActivity extends Activity{
         });
     }
 
+//  this don't work.....
 
-   // mText = (TextView)findViewById(R.id.textView1);
-     //   		mText.setText("Welcome "+mEdit.getText().toString()+"!");
-
-
+    public void initNames(){
+        setContentView(R.layout.names);
+        nameBox = (EditText) findViewById(R.id.nameBox);
+        TextView prompt = (TextView)findViewById(R.id.promptNameEnter);
+        for(int x = 0; x < numPlayers; x++){
+            prompt.setText("Player " + (x+1) + " enter your name");
+            final int finalX = x;
+            nButton = (Button)findViewById(R.id.readyButton);
+            nButton.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View view) {
+                    playerNames[finalX] = String.valueOf(nameBox.getText());
+                }
+            });
+        }
+    }
+    /*  this works more than that ^^ but it still doesn't work
     public void initNames(){
         setContentView(R.layout.names);
         nameBox = (EditText) findViewById(R.id.nameBox);
@@ -55,6 +69,7 @@ public class MainActivity extends Activity{
         for(int x = 0; x < numPlayers; x++){
             prompt.setText("Player " + (x+1) + " enter your name");
             final int finalX = x;
+
             View.OnClickListener waitForName = new View.OnClickListener() {
                 public void onClick(View v) {
                     if(v == next){
@@ -63,5 +78,5 @@ public class MainActivity extends Activity{
                 }
             };
         }
-    }
+    }*/
 }
